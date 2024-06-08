@@ -4,3 +4,4 @@ services:
   ping:
     build:
       dockerfile: Dockerfile
+      context: .

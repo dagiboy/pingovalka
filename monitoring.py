@@ -48,6 +48,7 @@ async def start_monitoring(site: str):
         await asyncio.sleep(60)
 
 async def im_ok():
+    await asyncio.sleep(60*60*9)
     while True:
         await BOT.send_message(text = "I'm alive", chat_id=BAD_NEWS_CHAT_ID)
         await asyncio.sleep(60*60*24)
