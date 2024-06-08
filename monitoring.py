@@ -3,7 +3,7 @@ import telegram
 import aiohttp
 import json
 
-CONFIGS = json.load(open("my_config.json"))
+CONFIGS = json.load(open("config.json"))
 BOT = telegram.Bot(CONFIGS["bot_token"])
 SITES = CONFIGS["sites"]
 BAD_NEWS_CHAT_ID = CONFIGS["notification_chat_id"]
